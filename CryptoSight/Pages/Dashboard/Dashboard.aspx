@@ -104,81 +104,80 @@
 
         <section id="portfolio" class="crypto-list hidden">
             <div class="container">
-               <div class="container">
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image10" runat="server" /></div>
-                    <div>
-                        <h1>$00<span id="Span1" runat="server"></span></h1>
-                        <h1>Bitcoin</h1>
+                <div class="container">
+                    <div class="coin-price">
+                        <div class="logo"><asp:Image ID="Image10" runat="server" /></div>
+                        <div>
+                            <h1>$00<span id="Span1" runat="server"></span></h1>
+                            <h1>Bitcoin</h1>
+                        </div>
+                    </div>
+                    <div class="coin-price">
+                        <div class="logo"><asp:Image ID="Image11" runat="server" /></div>
+                        <div>
+                            <h1>$00<span id="Span2" runat="server"></span></h1>
+                            <h1>Ethereum</h1>
+                        </div>
+                    </div>
+                    <div class="coin-price">
+                        <div class="logo"><asp:Image ID="Image12" runat="server" /></div>
+                        <div>
+                            <h1>$00<span id="Span3" runat="server"></span></h1>
+                            <h1>BNB</h1>
+                        </div>
+                    </div>
+                    <div class="coin-price">
+                        <div class="logo"><asp:Image ID="Image13" runat="server" /></div>
+                        <div>
+                            <h1>$00<span id="Span4" runat="server"></span></h1>
+                            <h1>Solana</h1>
+                        </div>
+                    </div>
+                    <div class="coin-price">
+                        <div class="logo"><asp:Image ID="Image14" runat="server" /></div>
+                        <div>
+                            <h1>$00<span id="Span5" runat="server"></span></h1>
+                            <h1>XRP</h1>
+                        </div>
+                    </div>
+                    <div class="coin-price">
+                        <div class="logo"><asp:Image ID="Image15" runat="server" /></div>
+                        <div>
+                            <h1>$00<span id="Span6" runat="server"></span></h1>
+                            <h1>Cardano</h1>
+                        </div>
+                    </div>
+                    <div class="coin-price">
+                        <div class="logo"><asp:Image ID="Image16" runat="server" /></div>
+                        <div>
+                            <h1>$00<span id="Span7" runat="server"></span></h1>
+                            <h1>Dogecoin</h1>
+                        </div>
+                    </div>
+                    <div class="coin-price">
+                        <div class="logo"><asp:Image ID="Image17" runat="server" /></div>
+                        <div>
+                            <h1>$00<span id="Span8" runat="server"></span></h1>
+                            <h1>Tron</h1>
+                        </div>
+                    </div>
+                    <div class="coin-price">
+                        <div class="logo"><asp:Image ID="Image18" runat="server" /></div>
+                        <div>
+                            <h1>$00<span id="Span9" runat="server"></span></h1>
+                            <h1>Chainlink</h1>
+                        </div>
+                    </div>
+                    <div class="coin-price">
+                        <div class="logo"><asp:Image ID="Image19" runat="server" /></div>
+                        <div>
+                            <h1>$00<span id="Span10" runat="server"></span></h1>
+                            <h1>Polkadot</h1>
+                        </div>
                     </div>
                 </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image11" runat="server" /></div>
-                    <div>
-                        <h1>$00<span id="Span2" runat="server"></span></h1>
-                        <h1>Ethereum</h1>
-                    </div>
-                </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image12" runat="server" /></div>
-                    <div>
-                        <h1>$00<span id="Span3" runat="server"></span></h1>
-                        <h1>BNB</h1>
-                    </div>
-                </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image13" runat="server" /></div>
-                    <div>
-                        <h1>$00<span id="Span4" runat="server"></span></h1>
-                        <h1>Solana</h1>
-                    </div>
-                </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image14" runat="server" /></div>
-                    <div>
-                        <h1>$00<span id="Span5" runat="server"></span></h1>
-                        <h1>XRP</h1>
-                    </div>
-                </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image15" runat="server" /></div>
-                    <div>
-                        <h1>$00<span id="Span6" runat="server"></span></h1>
-                        <h1>Cardano</h1>
-                    </div>
-                </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image16" runat="server" /></div>
-                    <div>
-                        <h1>$00<span id="Span7" runat="server"></span></h1>
-                        <h1>Dogecoin</h1>
-                    </div>
-                </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image17" runat="server" /></div>
-                    <div>
-                        <h1>$00<span id="Span8" runat="server"></span></h1>
-                        <h1>Tron</h1>
-                    </div>
-                </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image18" runat="server" /></div>
-                    <div>
-                        <h1>$00<span id="Span9" runat="server"></span></h1>
-                        <h1>Chainlink</h1>
-                    </div>
-                </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image19" runat="server" /></div>
-                    <div>
-                        <h1>$00<span id="Span10" runat="server"></span></h1>
-                        <h1>Polkadot</h1>
-                    </div>
-                </div>
-
             </div>
         </section>
-    
     </form>
 </body>
 </html>
