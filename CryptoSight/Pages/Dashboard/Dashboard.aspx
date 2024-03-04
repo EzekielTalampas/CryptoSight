@@ -23,7 +23,9 @@
             <div class="tab" onclick="switchTab('portfolio')">Portfolio</div>
         </section>
 
+        <%--  --%>
 
+        <%--  --%>
         <section id="top-10" class="crypto-list">
             <div class="container">
                <div class="container">
