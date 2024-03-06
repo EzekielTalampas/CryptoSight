@@ -1,0 +1,63 @@
+﻿body {
+    display: flex;
+    background-color: #101010;
+    justify-content: center;
+}
+form {
+    width: 400px;
+    margin: 100px;
+    background-color: #151515;
+    border-radius: 20px;
+    padding: 10px;
+}
+.Selector {
+    display: flex;
+    justify-content: center;
+    height: 4px;
+    width: 100px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    transition: transform .5s ease-in-out;
+}
+.ButtonHolder button {
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: #151515;
+    color: #FFFFFF;
+    padding: 0px 40px 0px 40px;
+}
+.ButtonHolder {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+}
+h4 {
+    color: #FFFFFF;
+    margin: 10px 0px 10px 0px;
+}
+.txtbox {
+    height: 40px;
+    width: 396px;
+    font-size: 30px;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #3D4243;
+}
+.Submit {
+    margin: 40px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    width: 400px;
+    height: 60px;
+    font-size: 30px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #92ACD3;
+}

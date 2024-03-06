@@ -69,6 +69,8 @@
     <Content Include="Pages\Dashboard\dashboard.js" />
     <Content Include="Pages\Dashboard\dashboard.css" />
     <Content Include="Pages\LogPage\LogPager.aspx" />
+    <Content Include="Pages\LogPage\LogPager.css" />
+    <Content Include="Pages\LogPage\LogPager.js" />
     <Content Include="Pages\Transaction\transaction.aspx" />
     <Content Include="Pages\Transaction\transactions.css" />
     <Content Include="Web.config" />
