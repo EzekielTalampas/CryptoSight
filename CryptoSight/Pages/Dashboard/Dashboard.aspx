@@ -27,80 +27,22 @@
 
         <%-- asdasd --%>
         <section id="top-10" class="crypto-list">
-            <div class="container">
-               <div class="container">
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="bitcoinLogo" runat="server" /></div>
-                    <div>
-                        <h1>$<span id="bitcoin" runat="server"></span></h1>
-                        <h1>Bitcoin</h1>
+            <div class="Cryptos">
+                <% foreach (CryptoSight.AppCode.CryptoCurrency crypto in CryptoSight.AppCode.CryptoCurrency.List) { %>
+                <div class="Crypto">
+                    <img src="<%= crypto.ImagePath %>" />
+                    <div class="CryptoIdentification">
+                        <p class="CryptoAbbreviation"><%= crypto.Abbreviation %></p>
+                        <p><%= crypto.Name %></p>
                     </div>
-                </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image1" runat="server" /></div>
-                    <div>
-                        <h1>$<span id="ethereum" runat="server"></span></h1>
-                        <h1>Ethereum</h1>
+                    <div class="CryptoRight">
+                        <p><%= crypto.Value %></p>
                     </div>
-                </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image2" runat="server" /></div>
-                    <div>
-                        <h1>$<span id="bnb" runat="server"></span></h1>
-                        <h1>BNB</h1>
-                    </div>
-                </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image3" runat="server" /></div>
-                    <div>
-                        <h1>$<span id="solana" runat="server"></span></h1>
-                        <h1>Solana</h1>
-                    </div>
-                </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image4" runat="server" /></div>
-                    <div>
-                        <h1>$<span id="xrp" runat="server"></span></h1>
-                        <h1>XRP</h1>
-                    </div>
-                </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image5" runat="server" /></div>
-                    <div>
-                        <h1>$<span id="cardano" runat="server"></span></h1>
-                        <h1>Cardano</h1>
-                    </div>
-                </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image6" runat="server" /></div>
-                    <div>
-                        <h1>$<span id="dogecoin" runat="server"></span></h1>
-                        <h1>Dogecoin</h1>
-                    </div>
-                </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image7" runat="server" /></div>
-                    <div>
-                        <h1>$<span id="tron" runat="server"></span></h1>
-                        <h1>Tron</h1>
-                    </div>
-                </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image8" runat="server" /></div>
-                    <div>
-                        <h1>$<span id="chainlink" runat="server"></span></h1>
-                        <h1>Chainlink</h1>
-                    </div>
-                </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="Image9" runat="server" /></div>
-                    <div>
-                        <h1>$<span id="polkadot" runat="server"></span></h1>
-                        <h1>Polkadot</h1>
-                    </div>
-                </div>
+                    <a class="TransactionButton">
 
-            </div>
+                    </a>
+                </div>
+                <% } %>
             </div>
         </section>
 
