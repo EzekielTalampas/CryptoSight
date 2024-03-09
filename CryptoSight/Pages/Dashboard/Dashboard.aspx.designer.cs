@@ -7,10 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CryptoSight {
+namespace CryptoSight
+{
 
 
-    public partial class Dashboard {
+    public partial class Dashboard
+    {
 
         /// <summary>
         /// form1 control.
@@ -22,183 +24,183 @@ namespace CryptoSight {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Image10 control.
+        /// bitcoinLogo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image10;
+        protected global::System.Web.UI.WebControls.Image bitcoinLogo;
 
         /// <summary>
-        /// Span1 control.
+        /// bitcoin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Span1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl bitcoin;
 
         /// <summary>
-        /// Image11 control.
+        /// Image1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image11;
+        protected global::System.Web.UI.WebControls.Image Image1;
 
         /// <summary>
-        /// Span2 control.
+        /// ethereum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Span2;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ethereum;
 
         /// <summary>
-        /// Image12 control.
+        /// Image2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image12;
+        protected global::System.Web.UI.WebControls.Image Image2;
 
         /// <summary>
-        /// Span3 control.
+        /// bnb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Span3;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl bnb;
 
         /// <summary>
-        /// Image13 control.
+        /// Image3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image13;
+        protected global::System.Web.UI.WebControls.Image Image3;
 
         /// <summary>
-        /// Span4 control.
+        /// solana control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Span4;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl solana;
 
         /// <summary>
-        /// Image14 control.
+        /// Image4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image14;
+        protected global::System.Web.UI.WebControls.Image Image4;
 
         /// <summary>
-        /// Span5 control.
+        /// xrp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Span5;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl xrp;
 
         /// <summary>
-        /// Image15 control.
+        /// Image5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image15;
+        protected global::System.Web.UI.WebControls.Image Image5;
 
         /// <summary>
-        /// Span6 control.
+        /// cardano control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Span6;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl cardano;
 
         /// <summary>
-        /// Image16 control.
+        /// Image6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image16;
+        protected global::System.Web.UI.WebControls.Image Image6;
 
         /// <summary>
-        /// Span7 control.
+        /// dogecoin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Span7;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dogecoin;
 
         /// <summary>
-        /// Image17 control.
+        /// Image7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image17;
+        protected global::System.Web.UI.WebControls.Image Image7;
 
         /// <summary>
-        /// Span8 control.
+        /// tron control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Span8;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tron;
 
         /// <summary>
-        /// Image18 control.
+        /// Image8 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image18;
+        protected global::System.Web.UI.WebControls.Image Image8;
 
         /// <summary>
-        /// Span9 control.
+        /// chainlink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Span9;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl chainlink;
 
         /// <summary>
-        /// Image19 control.
+        /// Image9 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image19;
+        protected global::System.Web.UI.WebControls.Image Image9;
 
         /// <summary>
-        /// Span10 control.
+        /// polkadot control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Span10;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl polkadot;
     }
 }
