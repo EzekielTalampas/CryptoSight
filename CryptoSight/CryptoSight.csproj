@@ -65,7 +65,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Icons\ADA.png" />
+    <Content Include="Assets\Icons\BNB.png" />
+    <Content Include="Assets\Icons\BTC.png" />
+    <Content Include="Assets\Icons\CHAINLINK.png" />
     <Content Include="Assets\Icons\Default.png" />
+    <Content Include="Assets\Icons\DOGE.png" />
+    <Content Include="Assets\Icons\ETH.png" />
+    <Content Include="Assets\Icons\POLKADOT.png" />
+    <Content Include="Assets\Icons\SOL.png" />
+    <Content Include="Assets\Icons\TRON.png" />
+    <Content Include="Assets\Icons\XRP.png" />
     <Content Include="Pages\Dashboard\Dashboard.aspx" />
     <Content Include="Pages\Dashboard\dashboard.js" />
     <Content Include="Pages\Dashboard\dashboard.css" />

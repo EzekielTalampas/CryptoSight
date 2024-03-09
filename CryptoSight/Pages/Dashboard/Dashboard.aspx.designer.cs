@@ -42,13 +42,13 @@ namespace CryptoSight
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl bitcoin;
 
         /// <summary>
-        /// Image1 control.
+        /// ethereumLogo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.Image ethereumLogo;
 
         /// <summary>
         /// ethereum control.
@@ -60,13 +60,13 @@ namespace CryptoSight
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl ethereum;
 
         /// <summary>
-        /// Image2 control.
+        /// bnbLogo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
+        protected global::System.Web.UI.WebControls.Image bnbLogo;
 
         /// <summary>
         /// bnb control.
@@ -78,13 +78,13 @@ namespace CryptoSight
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl bnb;
 
         /// <summary>
-        /// Image3 control.
+        /// solLogo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image3;
+        protected global::System.Web.UI.WebControls.Image solLogo;
 
         /// <summary>
         /// solana control.
@@ -96,13 +96,13 @@ namespace CryptoSight
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl solana;
 
         /// <summary>
-        /// Image4 control.
+        /// xrpLogo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image4;
+        protected global::System.Web.UI.WebControls.Image xrpLogo;
 
         /// <summary>
         /// xrp control.
@@ -114,13 +114,13 @@ namespace CryptoSight
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl xrp;
 
         /// <summary>
-        /// Image5 control.
+        /// cardanoLogo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image5;
+        protected global::System.Web.UI.WebControls.Image cardanoLogo;
 
         /// <summary>
         /// cardano control.
@@ -132,13 +132,13 @@ namespace CryptoSight
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl cardano;
 
         /// <summary>
-        /// Image6 control.
+        /// dogecoinLogo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image6;
+        protected global::System.Web.UI.WebControls.Image dogecoinLogo;
 
         /// <summary>
         /// dogecoin control.
@@ -150,13 +150,13 @@ namespace CryptoSight
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl dogecoin;
 
         /// <summary>
-        /// Image7 control.
+        /// tronLogo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image7;
+        protected global::System.Web.UI.WebControls.Image tronLogo;
 
         /// <summary>
         /// tron control.
@@ -168,13 +168,13 @@ namespace CryptoSight
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl tron;
 
         /// <summary>
-        /// Image8 control.
+        /// chainlinkLogo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image8;
+        protected global::System.Web.UI.WebControls.Image chainlinkLogo;
 
         /// <summary>
         /// chainlink control.
@@ -186,13 +186,13 @@ namespace CryptoSight
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl chainlink;
 
         /// <summary>
-        /// Image9 control.
+        /// polkadotLogo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image9;
+        protected global::System.Web.UI.WebControls.Image polkadotLogo;
 
         /// <summary>
         /// polkadot control.
