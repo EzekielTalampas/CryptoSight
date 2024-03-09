@@ -4,7 +4,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #151515;
     color: white
-   
 }
 
 .Crypto {
@@ -14,33 +13,41 @@
     height: 75px;
     width: 800px;
 }
+
 .CryptoIdentification {
     display: flex;
     flex-direction: column;
 }
+
 .CryptoAbbreviation {
     font-size: 25px;
 }
+
 .CryptoIdentification p {
     margin: 0px 15px;
     color: #FFFFFF;
 }
+
 .CryptoRight {
     margin-left: auto;
 }
-.CryptoRight p {
-    margin-right: 10px;
-    color: #FFFFFF;
-}
+
+    .CryptoRight p {
+        margin-right: 10px;
+        color: #FFFFFF;
+    }
+
 .Cryptos {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.Cryptos img {
-    width: 75px;
-    height: 75px;
-}
+
+    .Cryptos img {
+        width: 75px;
+        height: 75px;
+    }
+
 .TransactionButton {
     width: 50px;
     height: 50px;
@@ -49,7 +56,6 @@
 }
 
 .dashboard-header {
-    
     color: white;
     padding: 20px;
     text-align: center;
@@ -71,25 +77,6 @@
         margin-top: 10px;
     }
 
-.coin-price .logo img {
-    width: 50px;
-    height: 50px;
-}
-.coin-price {
-    display: flex;
-    align-items: center; /* Align items vertically */
-    margin-bottom: 15px; /* Add margin between coin-price elements */
-    padding: 10px; /* Add padding to provide spacing around the content */
-}
-
-    .coin-price .logo {
-        margin-right: 10px; /* Adjust spacing between logo and text */
-        flex-shrink: 0; /* Prevent logo from shrinking */
-    }
-
-    .coin-price h1 {
-        margin: 0; /* Reset default margins for the h1 element */
-    }
 
 .tabs {
     display: flex;
@@ -111,11 +98,11 @@
     padding: 20px;
 }
 
-.crypto-list.active {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    .crypto-list.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
 .hidden {
     display: none;

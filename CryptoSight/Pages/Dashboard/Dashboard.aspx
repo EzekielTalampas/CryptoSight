@@ -23,84 +23,130 @@
             <div class="tab" onclick="switchTab('portfolio')">Portfolio</div>
         </section>
 
-        <%--  --%>
 
-        <%-- asdasd --%>
         <section id="top-10" class="crypto-list">
-            <div class="container">
-               <div class="container">
-                <div class="coin-price">
-                    <asp:Image ID="bitcoinLogo" runat="server" ImageUrl="/Assets/Icons/BTC.png" AlternateText="Bitcoin Logo" />
-                    <div>
-                        <h1>$<span id="bitcoin" runat="server"></span></h1>
-                        <h1>Bitcoin</h1>
+            <div class="Cryptos">
+                <div class="Crypto">
+                    <div class="logo">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="/Assets/Icons/BTC.png" AlternateText="Bitcoin Logo" />
+                    </div>
+                    <div class="CryptoIdentification">
+                        <p class="CryptoAbbreviation">BTC</p>
+                        <p>Bitcoin</p>
+                    </div>
+                    <div class="CryptoRight">
+                        <p>$<span id="bitcoin" runat="server"></span></p>
                     </div>
                 </div>
-                <div class="coin-price btc">
-                    <div class="logo"><asp:Image ID="ethereumLogo" runat="server" ImageUrl="/Assets/Icons/ETH.png" AlternateText="Ethereum Logo" /></div>
-                    <div>
-                        <h1>$<span id="ethereum" runat="server"></span></h1>
-                        <h1>Ethereum</h1>
+                <div class="Crypto">
+                    <div class="logo">
+                        <asp:Image ID="Image2" runat="server" ImageUrl="/Assets/Icons/ETH.png" AlternateText="Bitcoin Logo" />
+                    </div>
+                    <div class="CryptoIdentification">
+                        <p class="CryptoAbbreviation">ETH</p>
+                        <p>Ethereum</p>
+                    </div>
+                    <div class="CryptoRight">
+                        <p>$<span id="ethereum" runat="server"></span></p>
                     </div>
                 </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="bnbLogo" runat="server" ImageUrl="/Assets/Icons/BNB.png" AlternateText="BNB Logo" /></div>
-                    <div>
-                        <h1>$<span id="bnb" runat="server"></span></h1>
-                        <h1>BNB</h1>
+                <div class="Crypto">
+                    <div class="logo">
+                        <asp:Image ID="Image3" runat="server" ImageUrl="/Assets/Icons/BNB.png" AlternateText="Bitcoin Logo" />
+                    </div>
+                    <div class="CryptoIdentification">
+                        <p class="CryptoAbbreviation">BNB</p>
+                        <p>BNB</p>
+                    </div>
+                    <div class="CryptoRight">
+                        <p>$<span id="bnb" runat="server"></span></p>
                     </div>
                 </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="solLogo" runat="server" ImageUrl="/Assets/Icons/SOL.png" AlternateText="Solana Logo" /></div>
-                    <div>
-                        <h1>$<span id="solana" runat="server"></span></h1>
-                        <h1>Solana</h1>
+                <div class="Crypto">
+                    <div class="logo">
+                        <asp:Image ID="Image4" runat="server" ImageUrl="/Assets/Icons/SOL.png" AlternateText="Bitcoin Logo" />
+                    </div>
+                    <div class="CryptoIdentification">
+                        <p class="CryptoAbbreviation">SOL</p>
+                        <p>Solana</p>
+                    </div>
+                    <div class="CryptoRight">
+                        <p>$<span id="solana" runat="server"></span></p>
                     </div>
                 </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="xrpLogo" runat="server" ImageUrl="/Assets/Icons/XRP.png" AlternateText="XRP Logo" /></div>
-                    <div>
-                        <h1>$<span id="xrp" runat="server"></span></h1>
-                        <h1>XRP</h1>
+                <div class="Crypto">
+                    <div class="logo">
+                        <asp:Image ID="Image5" runat="server" ImageUrl="/Assets/Icons/XRP.png" AlternateText="Bitcoin Logo" />
+                    </div>
+                    <div class="CryptoIdentification">
+                        <p class="CryptoAbbreviation">XRP</p>
+                        <p>Ripple</p>
+                    </div>
+                    <div class="CryptoRight">
+                        <p>$<span id="xrp" runat="server"></span></p>
                     </div>
                 </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="cardanoLogo" runat="server" ImageUrl="/Assets/Icons/ADA.png" AlternateText="Cardano Logo" /></div>
-                    <div>
-                        <h1>$<span id="cardano" runat="server"></span></h1>
-                        <h1>Cardano</h1>
+                <div class="Crypto">
+                    <div class="logo">
+                        <asp:Image ID="Image6" runat="server" ImageUrl="/Assets/Icons/ADA.png" AlternateText="Bitcoin Logo" />
+                    </div>
+                    <div class="CryptoIdentification">
+                        <p class="CryptoAbbreviation">ADA</p>
+                        <p>Cardano</p>
+                    </div>
+                    <div class="CryptoRight">
+                        <p>$<span id="cardano" runat="server"></span></p>
                     </div>
                 </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="dogecoinLogo" runat="server" ImageUrl="/Assets/Icons/DOGE.png" AlternateText="Dogecoin Logo"/></div>
-                    <div>
-                        <h1>$<span id="dogecoin" runat="server"></span></h1>
-                        <h1>Dogecoin</h1>
+                <div class="Crypto">
+                    <div class="logo">
+                        <asp:Image ID="Image7" runat="server" ImageUrl="/Assets/Icons/DOGE.png" AlternateText="Bitcoin Logo" />
+                    </div>
+                    <div class="CryptoIdentification">
+                        <p class="CryptoAbbreviation">DOGE</p>
+                        <p>Dogecoin</p>
+                    </div>
+                    <div class="CryptoRight">
+                        <p>$<span id="dogecoin" runat="server"></span></p>
                     </div>
                 </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="tronLogo" runat="server" ImageUrl="/Assets/Icons/TRON.png" AlternateText="Tron Logo"/></div>
-                    <div>
-                        <h1>$<span id="tron" runat="server"></span></h1>
-                        <h1>Tron</h1>
+                <div class="Crypto">
+                    <div class="logo">
+                        <asp:Image ID="Image8" runat="server" ImageUrl="/Assets/Icons/TRON.png" AlternateText="Bitcoin Logo" />
+                    </div>
+                    <div class="CryptoIdentification">
+                        <p class="CryptoAbbreviation">TRX</p>
+                        <p>Tron</p>
+                    </div>
+                    <div class="CryptoRight">
+                        <p>$<span id="tron" runat="server"></span></p>
                     </div>
                 </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="chainlinkLogo" runat="server" ImageUrl="/Assets/Icons/CHAINLINK.png" AlternateText="Chainlink Logo" /></div>
-                    <div>
-                        <h1>$<span id="chainlink" runat="server"></span></h1>
-                        <h1>Chainlink</h1>
+                <div class="Crypto">
+                    <div class="logo">
+                        <asp:Image ID="Image9" runat="server" ImageUrl="/Assets/Icons/CHAINLINK.png" AlternateText="Bitcoin Logo" />
+                    </div>
+                    <div class="CryptoIdentification">
+                        <p class="CryptoAbbreviation">LINK</p>
+                        <p>Chainlink</p>
+                    </div>
+                    <div class="CryptoRight">
+                        <p>$<span id="chainlink" runat="server"></span></p>
                     </div>
                 </div>
-                <div class="coin-price">
-                    <div class="logo"><asp:Image ID="polkadotLogo" runat="server" ImageUrl="/Assets/Icons/POLKADOT.png" AlternateText="Polkadot Logo"/></div>
-                    <div>
-                        <h1>$<span id="polkadot" runat="server"></span></h1>
-                        <h1>Polkadot</h1>
+                <div class="Crypto">
+                    <div class="logo">
+                        <asp:Image ID="Image10" runat="server" ImageUrl="/Assets/Icons/POLKADOT.png" AlternateText="Bitcoin Logo" />
+                    </div>
+                    <div class="CryptoIdentification">
+                        <p class="CryptoAbbreviation">DOT</p>
+                        <p>Polkadot</p>
+                    </div>
+                    <div class="CryptoRight">
+                        <p>$<span id="polkadot" runat="server"></span></p>
                     </div>
                 </div>
 
-            </div>
             </div>
             
         </section>
