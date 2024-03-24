@@ -31,10 +31,7 @@
                 <label for="quantity">Quantity</label>
                 <asp:TextBox ID="quantity" runat="server" TextMode="Number" CssClass="input-control"></asp:TextBox>
             </div>
-            <div class="form-group">
-                <label for="total-spent">Total Spent</label>
-                <asp:TextBox ID="totalSpent" runat="server" CssClass="input-control"></asp:TextBox>
-            </div>
+
             <div class="btn-group">
                 <asp:Button ID="buyButton" runat="server" Text="BUY" CssClass="buy-btn" OnClick="buyButton_Click" />
                 <asp:Button ID="sellButton" runat="server" Text="SELL" CssClass="sell-btn" OnClick="sellButton_Click" />
