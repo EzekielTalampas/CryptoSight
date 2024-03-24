@@ -162,6 +162,7 @@
                     </div>
                     <div class="CryptoRight">
                         <p><%= crypto.Value.Value %></p>
+                        <p><%= crypto.Value.Holding %></p>
                     </div>
                     <a class="TransactionButton">
 
