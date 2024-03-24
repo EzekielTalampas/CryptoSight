@@ -7,12 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CryptoSight
-{
+namespace CryptoSight {
 
 
-    public partial class Dashboard
-    {
+    public partial class Dashboard {
 
         /// <summary>
         /// form1 control.

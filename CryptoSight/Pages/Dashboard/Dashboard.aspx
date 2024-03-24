@@ -13,7 +13,7 @@
     <header class="dashboard-header">
         <h1>CoinSight</h1>
         <div class="total-assets">
-            <span>Total aAssets</span>
+            <span>Total Assets</span>
             <div class="amount">0.00 USD</div>
         </div>
     </header>
@@ -161,14 +161,11 @@
                         <p><%= crypto.Value.Name %></p>
                     </div>
                     <div class="CryptoRight">
-                        <p><%= crypto.Value.Value %></p>
                         <p><%= crypto.Value.Holding %></p>
                     </div>
-                    <a class="TransactionButton">
-
-                    </a>
                 </div>
                 <% } %>
+            </div>
             <div class="add-transaction">
                 <asp:Button ID="addTransactionButton" runat="server" Text="Add Transaction" CssClass="add-transaction-btn" OnClick="addTransactionButton_Click" />
             </div>
