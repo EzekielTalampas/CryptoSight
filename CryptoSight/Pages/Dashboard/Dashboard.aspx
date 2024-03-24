@@ -153,15 +153,15 @@
 
         <section id="portfolio" class="crypto-list hidden">
             <div class="Cryptos">
-                <% foreach (CryptoSight.AppCode.CryptoCurrency crypto in CryptoSight.AppCode.CryptoCurrency.List) { %>
+                <% foreach (KeyValuePair<string, CryptoSight.AppCode.CryptoCurrency> crypto in CryptoSight.AppCode.CryptoCurrency.Dict) { %>
                 <div class="Crypto">
-                    <img src="<%= crypto.ImagePath %>" />
+                    <img src="<%= crypto.Value.ImagePath %>" />
                     <div class="CryptoIdentification">
-                        <p class="CryptoAbbreviation"><%= crypto.Abbreviation %></p>
-                        <p><%= crypto.Name %></p>
+                        <p class="CryptoAbbreviation"><%= crypto.Value.Abbreviation %></p>
+                        <p><%= crypto.Value.Name %></p>
                     </div>
                     <div class="CryptoRight">
-                        <p><%= crypto.Value %></p>
+                        <p><%= crypto.Value.Value %></p>
                     </div>
                     <a class="TransactionButton">
 
