@@ -168,6 +168,8 @@
                     </a>
                 </div>
                 <% } %>
+            <div class="add-transaction">
+                <asp:Button ID="addTransactionButton" runat="server" Text="Add Transaction" CssClass="add-transaction-btn" OnClick="addTransactionButton_Click" />
             </div>
         </section>
     </form>

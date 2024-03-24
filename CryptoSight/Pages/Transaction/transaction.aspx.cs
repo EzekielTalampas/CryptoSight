@@ -23,5 +23,9 @@ namespace CryptoSight
         {
 
         }
+        protected void backButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Pages/Dashboard/Dashboard.aspx");
+        }
     }
 }
