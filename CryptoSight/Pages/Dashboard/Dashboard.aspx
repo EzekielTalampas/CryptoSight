@@ -152,7 +152,23 @@
         </section>
 
         <section id="portfolio" class="crypto-list hidden">
-            
+            <div class="Cryptos">
+                <% foreach (CryptoSight.AppCode.CryptoCurrency crypto in CryptoSight.AppCode.CryptoCurrency.List) { %>
+                <div class="Crypto">
+                    <img src="<%= crypto.ImagePath %>" />
+                    <div class="CryptoIdentification">
+                        <p class="CryptoAbbreviation"><%= crypto.Abbreviation %></p>
+                        <p><%= crypto.Name %></p>
+                    </div>
+                    <div class="CryptoRight">
+                        <p><%= crypto.Value %></p>
+                    </div>
+                    <a class="TransactionButton">
+
+                    </a>
+                </div>
+                <% } %>
+            </div>
         </section>
     </form>
 </body>
