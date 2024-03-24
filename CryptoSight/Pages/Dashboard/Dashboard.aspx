@@ -13,7 +13,7 @@
     <header class="dashboard-header">
         <h1>CoinSight</h1>
         <div class="total-assets">
-            <span>Total Assets</span>
+            <span>Total aAssets</span>
             <div class="amount">0.00 USD</div>
         </div>
     </header>
