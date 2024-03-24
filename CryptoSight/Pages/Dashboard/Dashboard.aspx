@@ -152,7 +152,9 @@
         </section>
 
         <section id="portfolio" class="crypto-list hidden">
-            
+            <div class="add-transaction">
+                <asp:Button ID="addTransactionButton" runat="server" Text="Add Transaction" CssClass="add-transaction-btn" OnClick="addTransactionButton_Click" />
+            </div>
         </section>
     </form>
 </body>

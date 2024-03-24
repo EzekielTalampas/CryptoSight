@@ -53,3 +53,5 @@ function switchTab(tabId) {
 window.addEventListener('load', function () {
     switchTab('top-10');
 });
+
+
