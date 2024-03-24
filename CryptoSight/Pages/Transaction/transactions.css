@@ -1,7 +1,9 @@
 ﻿body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5; /* Light grey background */
-    color: #333; /* Dark text color */
+    background-image: url('/Assets/Icons/TransactionBackground.gif'); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: #333; 
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -11,17 +13,17 @@
 }
 
 .transaction-form {
-    background-color: #fff; /* White background */
+    background-color: #3D4243; 
     padding: 20px;
     border-radius: 10px;
     width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
     .transaction-form h2 {
         text-align: center;
         margin-bottom: 20px;
-        color: #333; /* Dark text color */
+        color: white; 
     }
 
 .form-group {
@@ -31,33 +33,37 @@
 .transaction-form label {
     display: block;
     margin-bottom: 5px;
-    color: #555; /* Label color */
+    color: white; 
 }
 
-.input-control {
-    width: 100%;
+.input-control,
+.buy-btn,
+.sell-btn,
+.back-btn {
+    box-sizing: border-box; 
+    width: calc(100% - 20px); 
     padding: 10px;
-    border: 1px solid #ccc; /* Light border */
     border-radius: 5px;
-    background-color: #f9f9f9; /* Light grey background */
-    color: #333; /* Dark text color */
+    font-size: 16px;
 }
 
 .btn-group {
     display: flex;
+    flex-wrap: wrap; 
     justify-content: space-between;
 }
 
 .buy-btn,
 .sell-btn,
-back-btn {
-    width: calc(50% - 5px); /* Adjusting button width */
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+.back-btn {
+    flex-basis: calc(33.33% - 5px); 
 }
+
+.input-control {
+    margin-bottom: 10px; 
+}
+
+
 
 .buy-btn {
     background-color: #4CAF50; /* Green */
@@ -69,7 +75,7 @@ back-btn {
     color: white;
 }
 
-back-btn {
+.back-btn {
     background-color: #808080; /* Red */
     color: white;
 }
