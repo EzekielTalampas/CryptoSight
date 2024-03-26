@@ -154,5 +154,22 @@ body {
         display: block; /* Show active tab content */
     }
 
+/* Style the scrollbar itself (background) */
+.dashboard-container::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(0,0,0,0.2); /* semi-transparent black */
+}
+
+/* Style the draggable scrolling element (thumb) */
+.dashboard-container::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.1); /* semi-transparent white */
+    border-radius: 5px;
+}
+
+/* Style the scrollbar corner */
+.dashboard-container::-webkit-scrollbar-corner {
+    background-color: black;
+}
+
 
 /* Update CSS for elements inside .dashboard-container if necessary */
