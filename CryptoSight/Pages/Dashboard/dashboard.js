@@ -43,15 +43,52 @@ function updateCryptoPrices(response) {
 }
 
 function switchTab(tabId) {
-    document.querySelectorAll('.crypto-list').forEach(tab => {
-        tab.classList.remove('active');
+    // Hide all tab content sections
+    document.querySelectorAll('.crypto-list').forEach(tabContent => {
+        tabContent.style.display = 'none';
     });
 
-    document.getElementById(tabId).classList.add('active');
+    // Remove 'active' class from all tab buttons
+    document.querySelectorAll('.tabs .tab').forEach(tabButton => {
+        tabButton.classList.remove('active');
+    });
+
+    // Show the selected tab content
+    document.getElementById(tabId).style.display = 'block';
+
+    // Add 'active' class to the clicked tab button
+    // Assuming tab buttons have an ID corresponding to the tab content with '-btn' suffix
+    document.getElementById(tabId + '-btn').classList.add('active');
 }
 
+// Initialize the tabs on window load
 window.addEventListener('load', function () {
-    switchTab('top-10');
+    switchTab('top-10'); // Default to showing 'Top 10'
 });
+function switchTab(tabId) {
+    // Hide all tab content sections
+    document.querySelectorAll('.crypto-list').forEach(tabContent => {
+        tabContent.style.display = 'none';
+    });
+
+    // Remove 'active' class from all tab buttons
+    document.querySelectorAll('.tabs .tab').forEach(tabButton => {
+        tabButton.classList.remove('active');
+    });
+
+    // Show the selected tab content
+    document.getElementById(tabId).style.display = 'block';
+
+    // Add 'active' class to the clicked tab button
+    // Assuming tab buttons have an ID corresponding to the tab content with '-btn' suffix
+    document.getElementById(tabId + '-btn').classList.add('active');
+}
+
+// Initialize the tabs on window load
+window.addEventListener('load', function () {
+    switchTab('top-10'); // Default to showing 'Top 10'
+});
+
+
 
 

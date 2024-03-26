@@ -1,125 +1,158 @@
-﻿body, h1, div {
+﻿body, h1, div, span, p {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    box-sizing: border-box; /* Ensures padding does not add to the width */
+}
+
+body {
     background-color: #151515;
-    color: white
-}
-
-.Crypto {
-    margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    height: 75px;
-    width: 800px;
-}
-
-.CryptoIdentification {
-    display: flex;
-    flex-direction: column;
-}
-
-.CryptoAbbreviation {
-    font-size: 25px;
-}
-
-.CryptoIdentification p {
-    margin: 0px 15px;
-    color: #FFFFFF;
-}
-
-.CryptoRight {
-    margin-left: auto;
-}
-
-    .CryptoRight p {
-        margin-right: 10px;
-        color: #FFFFFF;
-    }
-
-.Cryptos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-    .Cryptos img {
-        width: 75px;
-        height: 75px;
-    }
-
-.TransactionButton {
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
-    background-color: #92ACD3;
+    overflow-x: hidden; /* Prevents horizontal scroll if content overflows */
+    background-image: url('/Assets/Icons/TransactionBackground.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .dashboard-header {
-    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    text-align: center;
 }
 
-.total-assets {
-    background: #3D4243;
-    border: 2px;
-    border-radius: 20px;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-    .total-assets .amount {
-        background: #3D4243;
-        display: inline-block;
-        padding: 10px;
-        border-radius: 5px;
-        margin-top: 10px;
+    .dashboard-header h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
     }
 
+/* Removed total-assets-container as it's not being used in your HTML markup */
+
+.total-assets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #222;
+    border-radius: 0; /* Removing border-radius to prevent cutting from the frame */
+    padding: 20px;
+    width: 100%; /* This sets the element's width to 100% of its parent's width */
+    box-sizing: border-box; /* This ensures padding is included in the width */
+    margin: 0; /* Ensure no margin is pushing the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+    .total-assets span,
+    .total-assets .amount {
+        margin-right: 10px;
+    }
+
+.amount {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
 
 .tabs {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    width: 100%; /* Ensures tabs container doesn't overflow */
 }
 
 .tab {
-    margin: 0 75px;
+    background: #333;
+    margin: 0 10px;
     padding: 10px 20px;
-    color: white;
+    border-radius: 20px;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease;
 }
 
-.crypto-list {
-    display: none;
+    .tab:hover {
+        background-color: #444;
+    }
+
+.crypto-list.active {
+    display: block;
     margin-top: 20px;
-    padding: 20px;
+}
+
+.Crypto {
+    background: #333;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    width: auto; /* Adjusted to prevent overflow */
+    max-width: 800px;
+}
+
+    .logo img,
+    .Crypto img {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        margin-right: 15px;
+    }
+
+.CryptoIdentification {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+
+.CryptoAbbreviation {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.CryptoIdentification p {
+    color: #ddd;
+}
+
+.CryptoRight {
+    margin-left: auto;
+    font-size: 1.2em;
+}
+
+body {
+    background-color: white; /* White background for the entire page */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.dashboard-container {
+    background-color: #151515; /* Original dark background color */
+    width: 600px; /* Fixed width */
+    height: 600px; /* Fixed height */
+    margin: 20px auto; /* Center the dashboard */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: auto; /* Show vertical scrollbar only when needed */
+    padding: 20px; /* Inner spacing */
+}
+
+.tabs .tab {
+    /* existing styles */
+}
+
+    .tabs .tab.active {
+        background-color: #555; /* or any other style changes for active tab */
+    }
+
+.crypto-list {
+    display: none; /* Hide all tab content by default */
 }
 
     .crypto-list.active {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        display: block; /* Show active tab content */
     }
 
-.hidden {
-    display: none;
-}
 
-
-.add-transaction-btn {
-    background-color: #007bff; /* Blue */
-    color: #fff; /* White text */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-    .add-transaction-btn:hover {
-        background-color: #0056b3; /* Darker blue on hover */
-    }
+/* Update CSS for elements inside .dashboard-container if necessary */
