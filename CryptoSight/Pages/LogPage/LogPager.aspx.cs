@@ -10,5 +10,11 @@ namespace CryptoSight.Pages.LogPage {
         protected void Page_Load(object sender, EventArgs e) {
             UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
         }
+        protected void Register(object sender, EventArgs e) {
+            
+        }
+        protected void LogIn(object sender, EventArgs e) {
+            
+        }
     }
 }
