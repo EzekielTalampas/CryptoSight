@@ -3,12 +3,12 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    box-sizing: border-box; /* Ensures padding does not add to the width */
+    box-sizing: border-box; 
 }
 
 body {
     background-color: #151515;
-    overflow-x: hidden; /* Prevents horizontal scroll if content overflows */
+    overflow-x: hidden; 
     background-image: url('/Assets/Icons/TransactionBackground.gif');
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,18 +26,18 @@ body {
         margin-bottom: 10px;
     }
 
-/* Removed total-assets-container as it's not being used in your HTML markup */
+
 
 .total-assets {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #222;
-    border-radius: 0; /* Removing border-radius to prevent cutting from the frame */
+    border-radius: 0; 
     padding: 20px;
-    width: 100%; /* This sets the element's width to 100% of its parent's width */
-    box-sizing: border-box; /* This ensures padding is included in the width */
-    margin: 0; /* Ensure no margin is pushing the box */
+    width: 100%; 
+    box-sizing: border-box; 
+    margin: 0; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -55,7 +55,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    width: 100%; /* Ensures tabs container doesn't overflow */
+    width: 100%; 
 }
 
 .tab {
@@ -84,7 +84,7 @@ body {
     display: flex;
     align-items: center;
     border-radius: 10px;
-    width: auto; /* Adjusted to prevent overflow */
+    width: auto; 
     max-width: 800px;
 }
 
@@ -117,25 +117,25 @@ body {
 }
 
 body {
-    background-color: white; /* White background for the entire page */
+    background-color: white; 
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
 }
 
 .dashboard-container {
-    background-color: #151515; /* Original dark background color */
-    width: 600px; /* Fixed width */
-    height: 600px; /* Fixed height */
-    margin: 20px auto; /* Center the dashboard */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    border-radius: 10px; /* Rounded corners */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    overflow-y: auto; /* Show vertical scrollbar only when needed */
-    padding: 20px; /* Inner spacing */
+    background-color: #151515; 
+    width: 600px;
+    height: 600px; 
+    margin: 20px auto; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    padding: 20px; 
 }
 
 .tabs .tab {
@@ -143,33 +143,57 @@ body {
 }
 
     .tabs .tab.active {
-        background-color: #555; /* or any other style changes for active tab */
+        background-color: #555; 
     }
 
 .crypto-list {
-    display: none; /* Hide all tab content by default */
+    display: none; 
 }
 
     .crypto-list.active {
-        display: block; /* Show active tab content */
+        display: block; 
     }
 
-/* Style the scrollbar itself (background) */
+
 .dashboard-container::-webkit-scrollbar {
     width: 10px;
-    background-color: rgba(0,0,0,0.2); /* semi-transparent black */
+    background-color: rgba(0,0,0,0.2); 
 }
 
-/* Style the draggable scrolling element (thumb) */
+
 .dashboard-container::-webkit-scrollbar-thumb {
-    background-color: rgba(255,255,255,0.1); /* semi-transparent white */
+    background-color: rgba(255,255,255,0.1); 
     border-radius: 5px;
 }
 
-/* Style the scrollbar corner */
+
 .dashboard-container::-webkit-scrollbar-corner {
     background-color: black;
 }
 
+.add-transaction-btn {
+    background-color: #556272; /* Darker shade for the button */
+    color: white;
+    padding: 10px 15px;
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    text-transform: uppercase; /* Makes the text uppercase */
+    letter-spacing: 1px; /* Increases spacing between letters */
+    font-weight: bold; /* Makes the button text bold */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    outline: none; /* Removes the outline to avoid a boxy look when clicked */
+}
 
-/* Update CSS for elements inside .dashboard-container if necessary */
+    .add-transaction-btn:hover {
+        background-color: #627d89; /* Lighter shade for the hover state */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+    }
+
+    .add-transaction-btn:active {
+        background-color: #4b6571; /* Even lighter shade for the active state */
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Smaller shadow for pressed effect */
+    }
+
+
+
