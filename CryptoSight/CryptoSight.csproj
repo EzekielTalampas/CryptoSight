@@ -85,13 +85,13 @@
     <Content Include="Pages\Dashboard\dashboard.css" />
     <Content Include="Pages\LogPage\LogPager.aspx" />
     <Content Include="Pages\LogPage\LogPager.css" />
-    <Content Include="Pages\LogPage\LogPager.js" />
     <Content Include="Pages\Transaction\transaction.aspx" />
     <Content Include="Pages\Transaction\transactions.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Codes\CryptoCurrency.cs" />
+    <Compile Include="Codes\LogIn.cs" />
     <Compile Include="Pages\Dashboard\Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

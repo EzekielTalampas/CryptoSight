@@ -1,38 +1,41 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Hosting;
+using System.Drawing.Printing;
+using System.Diagnostics;
+using System.Runtime.Remoting.Messaging;
+using System.Web.UI.WebControls;
+
 namespace CryptoSight.AppCode {
     public static class LogIn {
-        public class Users {
-            public string Username;
-            public string Password;
-        }
-        
-        static IEnumerable<IDataRecord> GetFromReader(IDataReader reader) {
-            while (reader.Read()) yield return reader;
-        }
 
-        public static bool Fetch() {
+        public static string[] GetUsers(string username) {
             string connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""{HostingEnvironment.MapPath("/")}App_Data\Database.mdf"";Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connectionString)) using (SqlCommand command = connection.CreateCommand()) {
                 connection.Open();                                                                  //Open Connection
-                command.CommandText = $"SELECT * FROM Users";                                       //Command
+                command.CommandText = $"SELECT * FROM Users WHERE Username = '{username}'";          //Command
                 SqlDataReader Data = command.ExecuteReader();
-                //CHECK IF EMPTY, IF EMPTY RETURN NULL IF NOT RETURN USERNAME
-                /*
-                if (GetFromReader(Data) > 0) {
+                if (Data.HasRows) {
+                    Data.Read();
+                    string outputUsername = Data["Username"].ToString();
+                    string outputPassword = Data["Pass"].ToString();
                     connection.Close();
-                    return GetFromReader(Data)[0];
-                }
-                else {
-                    Debug.WriteLine(crypto);
-                    Dict[crypto["Crypto"].ToString()].Holding = float.Parse(crypto["Holding"].ToString());
-                    connection.Close();
-                }
-                connection.Close();
-                return false;                                                     //Close Connection
-                */
+                    return new string[] { outputUsername, outputPassword };
+                } else return null;
             }
         }
-        public static void Register() {
-            
+        public static void RegisterUser(string username, string password) {
+            string connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""{HostingEnvironment.MapPath("/")}App_Data\Database.mdf"";Integrated Security=True";
+            using (SqlConnection connection = new SqlConnection(connectionString)) using (SqlCommand command = connection.CreateCommand()) {
+                connection.Open();                                                                                      //Open Connection
+                command.CommandText = $"INSERT INTO Users(Username, Pass) VALUES ('{username}', '{password}')";          //Command
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
         }
     }
 }

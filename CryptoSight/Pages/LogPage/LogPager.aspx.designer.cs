@@ -22,13 +22,31 @@ namespace CryptoSight.Pages.LogPage {
         protected global::System.Web.UI.HtmlControls.HtmlForm LogForm;
 
         /// <summary>
-        /// Pass control.
+        /// RegisterStatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Pass;
+        protected global::System.Web.UI.WebControls.HiddenField RegisterStatus;
+
+        /// <summary>
+        /// txtUsername control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtUsername;
+
+        /// <summary>
+        /// Password control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Password;
 
         /// <summary>
         /// confirmPass control.

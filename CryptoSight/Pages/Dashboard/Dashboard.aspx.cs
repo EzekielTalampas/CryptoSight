@@ -31,7 +31,7 @@ namespace CryptoSight {
             CryptoCurrency.Fetch();
         }
 
-        protected void addTransactionButton_Click(object sender, EventArgs e)
+        protected void AddTransactionButton_Click(object sender, EventArgs e)
         {
             Button button = sender as Button;
             string CoinType = button.ID;

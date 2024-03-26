@@ -13,7 +13,7 @@ using System.Web.UI.WebControls;
 namespace CryptoSight.AppCode {
     public class CryptoCurrency {
         public static Dictionary<string, CryptoCurrency> Dict { get; set; } = new Dictionary<string, CryptoCurrency>();
-        public static string Username = "Kamachi";
+        public static string Username;
 
         public string Abbreviation { get; set; } = "<Abbreviation>";
         public string Name { get; set; } = "<Name>";
@@ -33,12 +33,13 @@ namespace CryptoSight.AppCode {
         }
 
         public static void Fetch() {
+            Debug.WriteLine($"FETCHING DATA FOR {Username}");
             string connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""{HostingEnvironment.MapPath("/")}App_Data\Database.mdf"";Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connectionString)) using (SqlCommand command = connection.CreateCommand()) {
                 connection.Open();                                                                  //Open Connection
-                command.CommandText = $"SELECT * FROM Transactions RIGHT JOIN Users ON Users.ID = Transactions.UserID WHERE Users.Username = '{Username}' ORDER BY Transactions.CryptoName";             //Command
+                command.CommandText = $"SELECT * FROM Transactions LEFT JOIN Users ON Users.Username = Transactions.Username WHERE Users.Username = '{Username}' ORDER BY Transactions.CryptoName";             //Command
                 SqlDataReader Data = command.ExecuteReader();
-                foreach (IDataRecord crypto in GetFromReader(Data)) {
+                if (Data.HasRows) foreach (IDataRecord crypto in GetFromReader(Data)) {
                     Debug.WriteLine(crypto);
                     Dict[crypto["Crypto"].ToString()].Holding = float.Parse(crypto["Holding"].ToString());
                     break;
