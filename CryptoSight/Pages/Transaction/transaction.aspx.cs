@@ -35,8 +35,19 @@ namespace CryptoSight
 
         protected void SellButton_Click(object sender, EventArgs e)
         {
-            CryptoCurrency.UpdateCoin(SelectedCoin.Text, int.Parse(quantity.Text) * -1);
-            Response.Redirect("/Pages/Dashboard/Dashboard.aspx");
+            string coin = SelectedCoin.Text;
+            int quantityToSell = int.Parse(quantity.Text);
+
+            if (CryptoCurrency.Dict.ContainsKey(coin) && CryptoCurrency.Dict[coin].Holding >= quantityToSell)
+            {
+                CryptoCurrency.UpdateCoin(coin, -quantityToSell); 
+                Response.Redirect("/Pages/Dashboard/Dashboard.aspx");
+            }
+            else
+            {
+                
+                Response.Redirect("/Pages/Transaction/transaction.aspx?error=insufficient_quantity");
+            }
         }
         protected void BackButton_Click(object sender, EventArgs e)
         {
