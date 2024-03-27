@@ -10,7 +10,7 @@
     <script src="dashboard.js"></script>
 </head>
 <body>
-    <div class="dashboard-container"> <!-- Container added here -->
+    <div class="dashboard-container"> 
     <header class="dashboard-header">
         <h1>CoinSight</h1>
         <div class="total-assets">
@@ -172,6 +172,6 @@
             </div>
         </section>
     </form>
-        </div> <!-- End of the container -->
+        </div>
 </body>
 </html>

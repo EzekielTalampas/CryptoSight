@@ -9,31 +9,31 @@
     <script type="text/javascript">
         let toRegister = false;
 
-        //on load
+        
         document.addEventListener('DOMContentLoaded', function () {
 
             document.getElementById('<%= RegisterStatus.ClientID %>').value = toRegister;
-            //set selector to default position
+            
             document.querySelector('.Selector').style.transform =
                 'translateX(' + (document.querySelector('.LogInButton').offsetLeft - document.querySelector('#LogForm').offsetLeft) + 'px)';
             for (div of document.querySelectorAll('.Registration')) div.style.display = "none";
-            //on login click
+            
             document.querySelector('.LogInButton').addEventListener('click', function () {
                 if (!toRegister) return;
                 toRegister = false;
                 document.querySelector('.Selector').style.transform =
                     'translateX(' + (document.querySelector('.LogInButton').offsetLeft - document.querySelector('#LogForm').offsetLeft) + 'px)';
-                //hide hidden
+                
                 for (div of document.querySelectorAll('.Registration')) div.style.display = "none";
                 document.getElementById('<%= RegisterStatus.ClientID %>').value = toRegister;
             })
-            //on register click
+            
             document.querySelector('.RegisterButton').addEventListener('click', function () {
                 if (toRegister) return;
                 toRegister = true;
                 document.querySelector('.Selector').style.transform =
                     'translateX(' + (document.querySelector('.RegisterButton').offsetLeft - document.querySelector('#LogForm').offsetLeft) + 'px)';
-                //show hidden
+                
                 for (div of document.querySelectorAll('.Registration')) div.style.display = "block";
                 document.getElementById('<%= RegisterStatus.ClientID %>').value = toRegister;
             })

@@ -2,7 +2,10 @@
     display: flex;
     background-color: #101010;
     justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('/Assets/Icons/TransactionBackground.gif');
 }
+
 form {
     width: 400px;
     margin: 100px;
@@ -10,15 +13,18 @@ form {
     border-radius: 20px;
     padding: 10px;
 }
+
 .Selector {
     display: flex;
     justify-content: center;
     height: 4px;
     width: 100px;
     border-radius: 2px;
-    background-color: #FFFFFF;
+    background-color: #92ACD3;
     transition: transform .5s ease-in-out;
+    margin-top: 8px;
 }
+
 .ButtonHolder button {
     display: flex;
     justify-content: center;
@@ -26,29 +32,44 @@ form {
     background-color: #151515;
     color: #FFFFFF;
     padding: 0px 40px 0px 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+.LogInButton, .RegisterButton {
+    cursor: grab;
+    font-size: 16px;
+}
+
 .ButtonHolder {
     display: flex;
     justify-content: center;
 }
+
 h1 {
     display: flex;
     justify-content: center;
     color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 h4 {
     color: #FFFFFF;
     margin: 10px 0px 10px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .txtbox {
     height: 40px;
     width: 396px;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 4px;
     border: none;
     color: #FFFFFF;
     background-color: #3D4243;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .Submit {
     margin: 40px 0px 40px 0px;
     display: flex;
@@ -56,8 +77,13 @@ h4 {
     border-radius: 10px;
     width: 400px;
     height: 60px;
-    font-size: 30px;
+    font-size: 24px;
     border: none;
     color: #FFFFFF;
     background-color: #92ACD3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor:grab;
+    transition: background-color 0.3s ease;
 }
+
+
