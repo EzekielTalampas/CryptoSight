@@ -21,5 +21,11 @@ namespace CryptoSight {
             Debug.WriteLine(CoinType);
             Response.Redirect("/Pages/Transaction/transaction.aspx");
         }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session.Clear(); 
+            Response.Redirect("~/Pages/LogPage/LogPager.aspx");
+        }
     }
 }

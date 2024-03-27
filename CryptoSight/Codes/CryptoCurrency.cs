@@ -36,14 +36,14 @@ namespace CryptoSight.AppCode {
             Debug.WriteLine($"FETCHING DATA FOR {Username}");
             string connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""{HostingEnvironment.MapPath("/")}App_Data\Database.mdf"";Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connectionString)) using (SqlCommand command = connection.CreateCommand()) {
-                connection.Open();                                                                  //Open Connection
-                command.CommandText = $"SELECT * FROM Transactions LEFT JOIN Users ON Users.Username = Transactions.Username WHERE Users.Username = '{Username}' ORDER BY Transactions.CryptoName";             //Command
+                connection.Open();                                                                  
+                command.CommandText = $"SELECT * FROM Transactions LEFT JOIN Users ON Users.Username = Transactions.Username WHERE Users.Username = '{Username}' ORDER BY Transactions.CryptoName";             
                 SqlDataReader Data = command.ExecuteReader();
                 if (Data.HasRows) foreach (IDataRecord crypto in GetFromReader(Data)) {
                     Debug.WriteLine($"FOUND COIN {crypto["CryptoName"]}");
                     Dict[crypto["Crypto"].ToString()].Holding = float.Parse(crypto["Holding"].ToString());
                 }
-                connection.Close();                                                                 //Close Connection
+                connection.Close();                                                                 
             }
         }
 
