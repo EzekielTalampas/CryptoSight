@@ -157,7 +157,7 @@
                 <asp:Button ID="addTransactionButton" runat="server" Text="Add Transaction" CssClass="add-transaction-btn" OnClick="AddTransactionButton_Click" />
             </div>
             <div class="Cryptos">
-                <% foreach (KeyValuePair<string, CryptoSight.AppCode.CryptoCurrency> crypto in CryptoSight.AppCode.CryptoCurrency.Dict) { %>
+                <% foreach (KeyValuePair<string, CryptoSight.AppCode.CryptoCurrency> crypto in CryptoSight.AppCode.CryptoCurrency.Dict) if (crypto.Value.Holding != 0) { %>
                 <div class="Crypto">
                     <img src="<%= crypto.Value.ImagePath %>" />
                     <div class="CryptoIdentification">

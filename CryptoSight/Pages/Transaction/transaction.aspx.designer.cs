@@ -7,12 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CryptoSight
-{
+namespace CryptoSight {
 
 
-    public partial class transaction
-    {
+    public partial class transaction {
 
         /// <summary>
         /// form1 control.
@@ -24,13 +22,13 @@ namespace CryptoSight
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// currency control.
+        /// SelectedCoin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect currency;
+        protected global::System.Web.UI.WebControls.DropDownList SelectedCoin;
 
         /// <summary>
         /// quantity control.

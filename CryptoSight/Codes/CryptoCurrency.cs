@@ -40,11 +40,24 @@ namespace CryptoSight.AppCode {
                 command.CommandText = $"SELECT * FROM Transactions LEFT JOIN Users ON Users.Username = Transactions.Username WHERE Users.Username = '{Username}' ORDER BY Transactions.CryptoName";             //Command
                 SqlDataReader Data = command.ExecuteReader();
                 if (Data.HasRows) foreach (IDataRecord crypto in GetFromReader(Data)) {
-                    Debug.WriteLine(crypto);
+                    Debug.WriteLine($"FOUND COIN {crypto["CryptoName"]}");
                     Dict[crypto["Crypto"].ToString()].Holding = float.Parse(crypto["Holding"].ToString());
-                    break;
                 }
                 connection.Close();                                                                 //Close Connection
+            }
+        }
+
+        public static void UpdateCoin(string coin, int quantity) {
+            string connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""{HostingEnvironment.MapPath("/")}App_Data\Database.mdf"";Integrated Security=True";
+            using (SqlConnection connection = new SqlConnection(connectionString)) using (SqlCommand command = connection.CreateCommand()) {
+                connection.Open();
+                command.CommandText = $"SELECT * FROM Transactions LEFT JOIN Users ON Users.Username = Transactions.Username WHERE Users.Username = '{Username}' AND Transactions.Crypto = '{coin}' ORDER BY Transactions.CryptoName";
+                SqlDataReader Data = command.ExecuteReader();
+                if (Data.HasRows) command.CommandText = $"UPDATE Transactions SET Holding = Holding + {quantity} WHERE Username = '{Username}' AND Crypto = '{coin}'";
+                else command.CommandText = $"INSERT INTO TRANSACTIONS(Username, Crypto, CryptoName, Holding) VALUES ('{Username}', '{coin}', '{Dict[coin].Name}', '{quantity}')";
+                Data.Close();
+                command.ExecuteNonQuery();
+                connection.Close();
             }
         }
     }
