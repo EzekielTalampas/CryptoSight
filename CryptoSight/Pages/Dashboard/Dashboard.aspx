@@ -153,6 +153,9 @@
         </section>
 
         <section id="portfolio" class="crypto-list hidden">
+            <div class="add-transaction">
+                <asp:Button ID="addTransactionButton" runat="server" Text="Add Transaction" CssClass="add-transaction-btn" OnClick="AddTransactionButton_Click" />
+            </div>
             <div class="Cryptos">
                 <% foreach (KeyValuePair<string, CryptoSight.AppCode.CryptoCurrency> crypto in CryptoSight.AppCode.CryptoCurrency.Dict) { %>
                 <div class="Crypto">
@@ -167,9 +170,7 @@
                 </div>
                 <% } %>
             </div>
-            <div class="add-transaction">
-                <asp:Button ID="addTransactionButton" runat="server" Text="Add Transaction" CssClass="add-transaction-btn" OnClick="AddTransactionButton_Click" />
-            </div>
+            
         </section>
     </form>
         </div>

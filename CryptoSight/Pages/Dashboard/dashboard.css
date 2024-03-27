@@ -3,12 +3,12 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 body {
     background-color: #151515;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     background-image: url('/Assets/Icons/TransactionBackground.gif');
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,18 +26,16 @@ body {
         margin-bottom: 10px;
     }
 
-
-
 .total-assets {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #222;
-    border-radius: 0; 
+    border-radius: 0;
     padding: 20px;
-    width: 100%; 
-    box-sizing: border-box; 
-    margin: 0; 
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -55,7 +53,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    width: 100%; 
+    width: 100%;
 }
 
 .tab {
@@ -84,7 +82,7 @@ body {
     display: flex;
     align-items: center;
     border-radius: 10px;
-    width: auto; 
+    width: auto;
     max-width: 800px;
 }
 
@@ -117,83 +115,94 @@ body {
 }
 
 body {
-    background-color: white; 
+    background-color: white;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
+    height: 100vh;
 }
 
 .dashboard-container {
-    background-color: #151515; 
+    background-color: #151515;
     width: 600px;
-    height: 600px; 
-    margin: 20px auto; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
-    border-radius: 10px; 
-    overflow-x: hidden; 
-    overflow-y: auto; 
-    padding: 20px; 
+    height: 600px;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 20px;
 }
 
 .tabs .tab {
-    /* existing styles */
 }
 
     .tabs .tab.active {
-        background-color: #555; 
+        background-color: #555;
     }
 
 .crypto-list {
-    display: none; 
+    display: none;
 }
 
     .crypto-list.active {
-        display: block; 
+        display: block;
     }
 
 
 .dashboard-container::-webkit-scrollbar {
-    width: 10px;
-    background-color: rgba(0,0,0,0.2); 
+    width: auto;
+    background-color: transparent; 
+}
+
+.dashboard-container::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+    border-radius: 0;
+}
+
+.dashboard-container::-webkit-scrollbar-corner {
+    background-color: transparent;
 }
 
 
-.dashboard-container::-webkit-scrollbar-thumb {
-    background-color: rgba(255,255,255,0.1); 
+.crypto-list::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.crypto-list::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
 }
 
-
-.dashboard-container::-webkit-scrollbar-corner {
-    background-color: black;
+.add-transaction {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
 }
 
 .add-transaction-btn {
-    background-color: #556272; /* Darker shade for the button */
+    background-color: #556272;
     color: white;
-    padding: 10px 15px;
-    border: none; /* Removes the default border */
-    border-radius: 5px; /* Rounded corners for the button */
-    text-transform: uppercase; /* Makes the text uppercase */
-    letter-spacing: 1px; /* Increases spacing between letters */
-    font-weight: bold; /* Makes the button text bold */
-    cursor: pointer; /* Changes the cursor to indicate it's clickable */
-    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
-    outline: none; /* Removes the outline to avoid a boxy look when clicked */
+    padding: 10px; 
+    border: none;
+    border-radius: 10px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    outline: none;
 }
 
     .add-transaction-btn:hover {
-        background-color: #627d89; /* Lighter shade for the hover state */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+        background-color: #627d89;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     .add-transaction-btn:active {
-        background-color: #4b6571; /* Even lighter shade for the active state */
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Smaller shadow for pressed effect */
+        background-color: #4b6571;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     }
-
-
-
