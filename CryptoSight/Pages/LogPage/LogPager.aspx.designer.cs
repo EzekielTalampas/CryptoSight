@@ -7,10 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CryptoSight.Pages.LogPage {
+namespace CryptoSight.Pages.LogPage
+{
 
 
-    public partial class LogPager {
+    public partial class LogPager
+    {
 
         /// <summary>
         /// LogForm control.
@@ -38,6 +40,15 @@ namespace CryptoSight.Pages.LogPage {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtUsername;
+
+        /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
         /// Password control.

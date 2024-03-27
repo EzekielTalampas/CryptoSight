@@ -30,8 +30,8 @@
             <div class="form-group">
                 <label for="quantity">Quantity</label>
                 <asp:TextBox ID="quantity" runat="server" TextMode="Number" CssClass="input-control"></asp:TextBox>
-                <asp:RangeValidator runat="server" ControlToValidate="quantity" ErrorMessage="Enter a number above 0"
-                    Type="Integer" MinimumValue="1" MaximumValue="2147483647" ForeColor="Red"></asp:RangeValidator>
+                <%--<asp:RangeValidator runat="server" ControlToValidate="quantity" ErrorMessage="Enter a number above 0.005"
+                    Type="Double" MinimumValue="0.005" MaximumValue="2147483647" ForeColor="Red"></asp:RangeValidator>--%>
             </div>
 
             <div class="btn-group">

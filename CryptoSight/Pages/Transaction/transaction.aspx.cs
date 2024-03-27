@@ -29,7 +29,7 @@ namespace CryptoSight
 
         protected void BuyButton_Click(object sender, EventArgs e)
         {
-            CryptoCurrency.UpdateCoin(SelectedCoin.Text, int.Parse(quantity.Text));
+            CryptoCurrency.UpdateCoin(SelectedCoin.Text, float.Parse(quantity.Text));
             Response.Redirect("/Pages/Dashboard/Dashboard.aspx");
         }
 

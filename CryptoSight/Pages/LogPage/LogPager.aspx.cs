@@ -36,7 +36,7 @@ namespace CryptoSight.Pages.LogPage {
                 LogIn.RegisterUser(txtUsername.Text, Password.Text);
             } else if (RegisterStatus.Value == "false") {
                 if (User == null) {
-                    txtUsername.Text = "User not found!";
+                    Label1.Text = "User not found!";
                     txtUsername.Focus();
                     Debug.WriteLine($"USERNAME CHECK FAILED");
                     return;

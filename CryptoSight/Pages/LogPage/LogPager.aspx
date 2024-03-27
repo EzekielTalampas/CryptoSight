@@ -51,6 +51,7 @@
         <div class="Selector"></div>
         <h4>Username</h4>
         <asp:TextBox runat="server" class="txtbox" ID="txtUsername" />
+        <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
         <div class="Registration">
             <h4>Gmail</h4>
             <asp:TextBox runat="server" class="txtbox" />

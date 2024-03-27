@@ -47,7 +47,7 @@ namespace CryptoSight.AppCode {
             }
         }
 
-        public static void UpdateCoin(string coin, int quantity) {
+        public static void UpdateCoin(string coin, float quantity) {
             string connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""{HostingEnvironment.MapPath("/")}App_Data\Database.mdf"";Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connectionString)) using (SqlCommand command = connection.CreateCommand()) {
                 connection.Open();
