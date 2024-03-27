@@ -18,7 +18,11 @@
             <div class="amount">0.00 USD</div>
         </div>
     </header>
+        
     <form id="form1" runat="server">
+        <div class="logout-button">
+            <asp:Button ID="btnLogout" runat="server" Text="Log Out" CssClass="logout-btn" OnClick="btnLogout_Click" />
+        </div>
         <section class="tabs">
             <div class="tab" onclick="switchTab('top-10')">Top 10</div>
             <div class="tab" onclick="switchTab('portfolio')">Portfolio</div>

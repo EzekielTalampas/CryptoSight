@@ -7,10 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CryptoSight {
+namespace CryptoSight
+{
 
 
-    public partial class Dashboard {
+    public partial class Dashboard
+    {
 
         /// <summary>
         /// form1 control.
@@ -20,6 +22,15 @@ namespace CryptoSight {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+
+        /// <summary>
+        /// btnLogout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnLogout;
 
         /// <summary>
         /// Image1 control.
