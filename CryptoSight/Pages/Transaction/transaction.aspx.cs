@@ -45,8 +45,8 @@ namespace CryptoSight
             }
             else
             {
-                
-                Response.Redirect("/Pages/Transaction/transaction.aspx?error=insufficient_quantity");
+                Response.Write("<script>alert('invalid')</script>");
+                //Response.Redirect("/Pages/Transaction/transaction.aspx?error=insufficient_quantity");
             }
         }
         protected void BackButton_Click(object sender, EventArgs e)
