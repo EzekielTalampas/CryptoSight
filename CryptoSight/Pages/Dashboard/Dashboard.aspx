@@ -7,7 +7,101 @@
     <title>Coin</title>
     <link href="dashboard.css" rel="stylesheet" type="text/css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="dashboard.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var cachedData = localStorage.getItem('cryptoData');
+
+            if (cachedData) {
+                var response = JSON.parse(cachedData);
+                updateCryptoPrices(response);
+            } else {
+                fetchCryptoData();
+            }
+        });
+
+        function fetchCryptoData() {
+            var liveprices = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,binancecoin,solana,ripple,cardano,dogecoin,tron,chainlink,polkadot&vs_currencies=usd",
+                "method": "GET",
+                "headers": {}
+            };
+
+            $.ajax(liveprices).done(function (response) {
+                console.log(response);
+
+                localStorage.setItem('cryptoData', JSON.stringify(response));
+
+                updateCryptoPrices(response);
+            }).fail(function (jqXHR, textStatus, errorThrown) {
+                console.log("Error:", errorThrown);
+            });
+        }
+
+        function updateCryptoPrices(response) {
+            $("#bitcoin").text(response.bitcoin.usd);
+            $("#ethereum").text(response.ethereum.usd);
+            $("#bnb").text(response.binancecoin.usd);
+            $("#solana").text(response.solana.usd);
+            $("#xrp").text(response.ripple.usd);
+            $("#cardano").text(response.cardano.usd);
+            $("#dogecoin").text(response.dogecoin.usd);
+            $("#tron").text(response.tron.usd);
+            $("#chainlink").text(response.chainlink.usd);
+            $("#polkadot").text(response.polkadot.usd);
+
+            $("#Bitcoin").text("$" + (response.bitcoin.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["BTC"].Holding%>));
+            $("#Ethereum").text("$" + (response.ethereum.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["ETH"].Holding%>));
+            $("#BNB").text("$" + (response.binancecoin.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["BNB"].Holding%>));
+            $("#Solana").text("$" + (response.solana.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["SOL"].Holding%>));
+            $("#Ripple").text("$" + (response.ripple.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["XRP"].Holding%>));
+            $("#Cardano").text("$" + (response.cardano.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["ADA"].Holding%>));
+            $("#Dogecoin").text("$" + (response.dogecoin.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["DOGE"].Holding%>));
+            $("#Tron").text("$" + (response.tron.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["TRX"].Holding%>));
+            $("#Chainlink").text("$" + (response.chainlink.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["LINK"].Holding%>));
+            $("#Polkadot").text("$" + (response.polkadot.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["DOT"].Holding%>));
+
+            $("#TotalCoin").text((
+                response.bitcoin.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["BTC"].Holding%> +
+                response.ethereum.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["ETH"].Holding%> +
+                response.binancecoin.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["BNB"].Holding%> +
+                response.solana.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["SOL"].Holding%> +
+                response.ripple.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["XRP"].Holding%> +
+                response.cardano.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["ADA"].Holding%> +
+                response.dogecoin.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["DOGE"].Holding%> +
+                response.tron.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["TRX"].Holding%> +
+                response.chainlink.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["LINK"].Holding%> +
+                response.polkadot.usd * <%= CryptoSight.AppCode.CryptoCurrency.Dict["DOT"].Holding%>).toFixed(2) + "USD");
+        }
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.crypto-list').forEach(tabContent => {
+                tabContent.style.display = 'none';
+            });
+            document.querySelectorAll('.tabs .tab').forEach(tabButton => {
+                tabButton.classList.remove('active');
+            });
+            document.getElementById(tabId).style.display = 'block';
+            document.getElementById(tabId + '-btn').classList.add('active');
+        }
+        window.addEventListener('load', function () {
+            switchTab('top-10');
+        });
+        function switchTab(tabId) {
+            document.querySelectorAll('.crypto-list').forEach(tabContent => {
+                tabContent.style.display = 'none';
+            });
+            document.querySelectorAll('.tabs .tab').forEach(tabButton => {
+                tabButton.classList.remove('active');
+            });
+            document.getElementById(tabId).style.display = 'block';
+            document.getElementById(tabId + '-btn').classList.add('active');
+        }
+        window.addEventListener('load', function () {
+            switchTab('top-10');
+        });
+    </script>
 </head>
 <body>
     <div class="dashboard-container"> 
@@ -15,7 +109,7 @@
         <h1>CoinSight</h1>
         <div class="total-assets">
             <span>Total Assets</span>
-            <div class="amount">0.00 USD</div>
+            <div class="amount"><span id="TotalCoin" runat="server"/></div>
         </div>
     </header>
         
@@ -170,6 +264,7 @@
                     </div>
                     <div class="CryptoRight">
                         <p><%= crypto.Value.Holding %></p>
+                        <p><span id="<%= crypto.Value.Name %>" /></p>
                     </div>
                 </div>
                 <% } %>

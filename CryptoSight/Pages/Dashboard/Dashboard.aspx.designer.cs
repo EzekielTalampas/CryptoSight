@@ -7,12 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CryptoSight
-{
+namespace CryptoSight {
 
 
-    public partial class Dashboard
-    {
+    public partial class Dashboard {
+
+        /// <summary>
+        /// TotalCoin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl TotalCoin;
 
         /// <summary>
         /// form1 control.
